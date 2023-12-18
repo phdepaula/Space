@@ -1,0 +1,25 @@
+{% extends 'gallery/base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <section class="image">
+        <div class="imagem_content">
+            <img class="imagem_image" src="{% static '/assets/icons/nebula.png' %}">
+            <br>
+            <div class="image_info">
+                <div class="imagem_text">
+                    <p class="image_title">Carina Nebula</p>
+                    <p class="image_description">December 18, 2023</p>
+                    <br>
+                    <br>
+                    <p class="imagem_text">The term "nebula" is used to describe extensive clouds of interstellar gas and dust that form regions of intense star formation activity or are remnants of stars that have exploded. These vast cosmic clouds of gas and dust can be found in different regions of the galaxy, and the variety of shapes and colors they exhibit is spectacular.</p>
+                    <p class="imagem_text">There are several types of nebulas, but two of the most well-known categories are emission nebulas and reflection nebulas. Emission nebulas consist of bright gases that emit their own light, often ionized by radiation from nearby stars. On the other hand, reflection nebulas do not emit light on their own but instead reflect the light from nearby stars, often taking on a blue hue due to light scattering.</p>
+                    <p class="imagem_text">A notable example of an emission nebula is the Orion Nebula, located in the Orion constellation. This nebula is an active star-forming region where new stars are emerging from interstellar material. The Horsehead Nebula, on the other hand, is an example of a reflection nebula, where light from nearby stars is reflected by cosmic dust, creating a distinctive horsehead-shaped appearance.</p>
+                    <p class="imagem_text">Another type of nebula is the planetary nebula, formed when a Sun-like star sheds its outer gas layers at the end of its life, leaving behind a hot core that illuminates the surrounding gas layers. The Ring Nebula in the Lyra constellation is a well-known example of this type of nebula.</p>
+                    <p class="imagem_text">Advanced studies conducted with space and ground-based telescopes have allowed astronomers to unravel the secrets of nebulas, significantly contributing to our understanding of star formation and cosmic evolution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}

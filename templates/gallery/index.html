@@ -1,0 +1,74 @@
+{% extends 'gallery/base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <section class="banner">
+        <img class="banner_image" src="{% static '/assets/icons/banner.png' %}" alt="Banner Space">
+        <h1 class="banner_title">The most complete gallery of space photos!</h1>
+    </section>
+    <section class="tags">
+        <p class="tags_title">Search by tags:</p>
+        <ul class="tags_list">
+            <li class="tags_tag"><a href="{% url 'nebula' %}">Nebula</a></li>
+            <li class="tags_tag"><a href="{% url 'star' %}">Star</a></li>
+            <li class="tags_tag"><a href="{% url 'galaxy' %}">Galaxy</a></li>
+            <li class="tags_tag"><a href="{% url 'planet' %}">Planet</a></li>
+        </ul>
+    </section>
+    <section class="gallery">
+        <div class="cards">
+            <h2 class="cards_title">Browse the gallery</h2>
+            <ul class="cards_list">
+                <li class="card">
+                    <a href="{% url 'nebula' %}">
+                        <img class="card_image" src="{% static '/assets/icons/nebula.png' %}" alt="photo">
+                    </a>
+                    <span class="card_tag">Nebula</span>
+                    <div class="card_data">
+                        <p class="card_title">Carina Nebula</p>
+                        <div class="card_text">
+                            <p class="card_description">Located in the constellation of Carina.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <a href="{% url 'star' %}">
+                        <img class="card_image" src="{% static '/assets/icons/deneb.jpg' %}" alt="foto">
+                    </a>
+                    <span class="card_tag">Star</span>
+                    <div class="card_data">
+                        <p class="card_title">Deneb</p>
+                        <div class="card_text">
+                            <p class="card_description">Located in the constellation Cygnus (Swan).</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <a href="{% url 'galaxy' %}">
+                        <img class="card_image" src="{% static '/assets/icons/andromeda.jpg' %}" alt="foto">
+                    </a>
+                    <span class="card_tag">Galaxy</span>
+                    <div class="card_data">
+                        <p class="card_title">Andromeda</p>
+                        <div class="card_text">
+                            <p class="card_description">Located approximately 2.5 million light years from Earth.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <a href="{% url 'planet' %}">
+                        <img class="card_image" src="{% static '/assets/icons/earth.jpg' %}" alt="foto">
+                    </a>
+                    <span class="card_tag">Planet</span>
+                    <div class="card_data">
+                        <p class="card_title">Earth</p>
+                        <div class="card_text">
+                            <p class="card_description">Located in the solar system.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>
+{% endblock %}

@@ -22,6 +22,26 @@
         </main>
     </div>
     {% include 'gallery/partials/_footer.html' %}
+
+    <script>
+        function submitForm() {
+            var searchTerm = document.getElementById("searchInput").value;
+            verificaURL(searchTerm);
+        }
+
+        function verificaURL(url) {
+            fetch(url, { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = url;
+                    } else {
+                        console.log('The tag does not exist.');
+                        alert('The tag does not exist.');
+                    }
+                })
+                .catch(error => console.error('Error checking URL:', error));
+        }
+    </script>
 </body>
 
 </html>

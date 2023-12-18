@@ -3,8 +3,8 @@
     <img src="{% static '/assets/icons/logo.png' %}" alt="Logo" />
     <div class="search_header">
         <div class="search_background">
-            <input class="search_input" type="text" placeholder="What are you looking for?">
-            <img class="search_icone" src="{% static 'assets/icons/search.png' %}" alt="search icon">
+            <input class="search_input" type="text" id="searchInput" placeholder="What tag are you looking for?">
+            <img class="search_icon" src="{% static 'assets/icons/search.png' %}" alt="search icon" onclick="submitForm()">
         </div>
     </div>
 </header>
