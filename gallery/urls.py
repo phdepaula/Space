@@ -1,7 +1,10 @@
 from django.urls import path
-from gallery.views import index, image
+from gallery.views import index, star, galaxy, nebula, planet
 
 urlpatterns = [
     path("", index, name="index"),
-    path("image/", image, name = "image")
+    path("star/", star, name = "star"),
+    path("galaxy/", galaxy, name = "galaxy"),
+    path("nebula/", nebula, name = "nebula"),
+    path("planet/", planet, name = "planet"),
 ]
